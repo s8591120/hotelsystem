@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservation System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Reservation System</h1>
+
+    <form id="reservationForm">
+      <label for="guestName">Guest Name:</label>
+      <input type="text" id="guestName" required />
+
+      <label for="checkInDate">Check-in Date:</label>
+      <input type="date" id="checkInDate" required />
+
+      <label for="checkOutDate">Check-out Date:</label>
+      <input type="date" id="checkOutDate" required />
+
+      <button type="button" onclick="makeReservation()">
+        Make Reservation
+      </button>
+    </form>
+
+    <div id="reservationList">
+      <!-- Display reservations here -->
+    </div>
+    <div id="successMessage" style="display: none">
+      <h2>Reservation Successful!</h2>
+      <p>Thank you for choosing our service. We look forward to hosting you.</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
